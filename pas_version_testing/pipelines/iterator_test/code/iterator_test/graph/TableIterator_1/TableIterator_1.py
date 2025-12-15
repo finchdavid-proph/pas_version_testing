@@ -16,7 +16,7 @@ class TableIterator_1(MetaGemExec):
     def execute(self, spark: SparkSession, subgraph_config: SubgraphConfig) -> List[DataFrame]:
         Config.update(subgraph_config)
         df_validation_source = validation_source(spark)
-        df_noop_reformat = noop_reformat(spark, df_validation_source)
+        df_sql_string_config = sql_string_config(spark, df_validation_source)
         subgraph_config.update(Config)
 
     def apply(self, spark: SparkSession, in0: DataFrame, ) -> None:

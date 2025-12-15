@@ -287,6 +287,12 @@
         "sourcePort" : "4GqbvHIyVCYhZWm-FXgN1$$ZbA4Rc60NMu1kHOz7IXBd",
         "target" : "4E42ErmvpCxH3XHYKFgvf$$ZJrNO3iudNmSgjubRtEYd",
         "targetPort" : "da5iIEObAxfi-xxI4oh8A$$363kawNCzyvPv_FRg0td9"
+      }, {
+        "id" : "Fknck3GPjjSPVsmeQIWOY$$SXXUMZtoP4iYIqjRiJj0A",
+        "source" : "4E42ErmvpCxH3XHYKFgvf$$ZJrNO3iudNmSgjubRtEYd",
+        "sourcePort" : "DCLgBkUoJq4kbGAyqOtzt$$XRmULQvfPyYYKR13yU2Wy",
+        "target" : "m8GO589HFCxWE6-Qj6VFO$$sjsVOtKFbifs5NyIBAjsI",
+        "targetPort" : "gf3uLeJMNfy_8f0wXfWUv$$iea0YiPV9avGEgmujHzPX"
       } ],
       "processes" : {
         "46m-Io2W7V8Ga4FtCd--t$$Xrb9jMpbV4EczZy554tHQ" : {
@@ -332,8 +338,8 @@
           "metadata" : {
             "label" : "validation_source",
             "slug" : "validation_source",
-            "x" : -420,
-            "y" : -280,
+            "x" : 20,
+            "y" : 20,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -447,10 +453,10 @@
           "id" : "4E42ErmvpCxH3XHYKFgvf$$ZJrNO3iudNmSgjubRtEYd",
           "component" : "Reformat",
           "metadata" : {
-            "label" : "noop_reformat",
-            "slug" : "noop_reformat",
-            "x" : -280,
-            "y" : -280,
+            "label" : "sql_string_config",
+            "slug" : "sql_string_config",
+            "x" : 220,
+            "y" : 20,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -504,6 +510,31 @@
             "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.53&projectSubscriptionProjectId=12654&path=gems/Reformat",
             "projectName" : "ProphecySparkBasicsPython"
           }
+        },
+        "m8GO589HFCxWE6-Qj6VFO$$sjsVOtKFbifs5NyIBAjsI" : {
+          "id" : "m8GO589HFCxWE6-Qj6VFO$$sjsVOtKFbifs5NyIBAjsI",
+          "component" : "Target",
+          "metadata" : {
+            "label" : "validation_output",
+            "slug" : "validation_output",
+            "x" : 420,
+            "y" : 20,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "gf3uLeJMNfy_8f0wXfWUv$$iea0YiPV9avGEgmujHzPX",
+              "slug" : "in0"
+            } ],
+            "outputs" : [ ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : { }
         }
       },
       "componentInfo" : {
@@ -565,6 +596,38 @@
     },
     "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.jxoHImRH3TUotuS0ullAe$$LVsaJHTTBNV9OGDsuy2rM.processes.m8GO589HFCxWE6-Qj6VFO$$sjsVOtKFbifs5NyIBAjsI",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.jxoHImRH3TUotuS0ullAe$$LVsaJHTTBNV9OGDsuy2rM.processes.m8GO589HFCxWE6-Qj6VFO$$sjsVOtKFbifs5NyIBAjsI.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "dataset id missing",
     "tags" : [ ],
     "relatedInformation" : [ ]
   } ]
